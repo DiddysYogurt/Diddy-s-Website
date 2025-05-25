@@ -7,48 +7,32 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ff69b4;
-    padding: 10px 20px;
+/* Links Section */
+#links {
+    display: block;
+    padding: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+#links a {
+    display: inline-block;
+    color: #ff69b4; /* A nice pink to match your theme */
     font-size: 18px;
-}
-
-/* Header Section */
-header {
-    padding: 30px;
-    background-color: #ffe4e1;
-}
-
-#logo {
-    width: 150px;
+    text-decoration: underline;
+    margin: 10px;
 }
 
 /* Flavors Section */
 #flavor-list {
     list-style: none;
-    padding: 0;
+    padding: 20px;
 }
 
 #flavor-list li {
+    display: block;
     padding: 10px;
     font-size: 18px;
     background: white;
-    margin: 5px auto;
+    margin: 10px auto;
     width: 50%;
     border-radius: 5px;
     transition: 0.3s;
@@ -58,3 +42,4 @@ header {
     background: #ff69b4;
     color: white;
 }
+
