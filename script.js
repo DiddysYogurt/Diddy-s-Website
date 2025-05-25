@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // List of flavors with links to dedicated pages
     const flavors = [
-        { name: "Cake Batter Lowfat Froyo", file: "flavors/cake-batter.html" },
+        { name: "Cake Batter Lowfat Froyo", file: "flavors/cakebatter.html" },
         { name: "Cheesecake No Sugar Added Froyo", file: "flavors/cheesecake.html" },
         { name: "Choclate Classic Nonfat Froyo", file: "flavors/chocolate.html" },
         { name: "Cookies N' Cream Nonfat Froyo", file: "flavors/cookies.html" },
