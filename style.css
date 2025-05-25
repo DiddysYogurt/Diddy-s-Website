@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Page Styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,61 +7,54 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ff69b4;
-    padding: 10px 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Header Section */
+/* Header Styling */
 header {
-    padding: 30px;
-    background-color: #ffe4e1;
+    background-color: #ff69b4;
+    padding: 20px;
+    color: white;
+    font-size: 28px;
 }
 
-#logo {
-    width: 150px;
-}
-
-/* Flavors Section */
-#flavor-container {
+/* Menu Section */
+#menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
 }
 
-.flavor-item {
+/* Flavors & Toppings Lists */
+.list-container {
     background: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    width: 220px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
 }
 
-.flavor-item img {
-    width: 100%;
-    border-radius: 10px;
+.list-container h2 {
+    color: #ff69b4;
+    font-size: 24px;
 }
 
-.flavor-item p {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 5px;
+.flavor-list, .topping-list {
+    list-style: none;
+    padding: 0;
 }
+
+.flavor-list li, .topping-list li {
+    font-size: 18px;
+    padding: 8px;
+    background: #ffecec;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.flavor-list li:hover, .topping-list li:hover {
+    background: #ff69b4;
+    color: white;
+    cursor: pointer;
+}
+
