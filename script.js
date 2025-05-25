@@ -1,32 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const imageContainer = document.getElementById("image-container");
+    const flavorList = document.getElementById("flavor-list");
 
-    // List of flavor images stored in the "images" folder
-    const images = [
-        "Cake Batter Lowfat Froyo.jpg",
-        "Cheesecake No Sugar Added Froyo.jpg",
-        "Choclate Classic Nonfat Froyo.jpg",
-        "Cookies N' Cream Nonfat Froyo.jpg",
-        "Cotton Candy Nonfat Froyo.jpg",
-        "Georgia Peach Nonfat Froyo.jpg",
-        "Georgia peach.jpg",
-        "Hawaiian Pineapple Nonfat Froyo.jpg",
-        "Island Banana NonFat Froyo.jpg",
-        "Mango Sunrise Non Dairy Sorbert.jpg",
-        "Pomegranate Raspberry Non Dairy Sorbet.jpg",
-        "Salted Caramel Corn LowFat Froyo.jpg",
-        "Strawberry Banana No sugar Added.jpg",
-        "Strawberry Lemonade Non Dairy Sorbet.jpg",
-        "Sweet Coconut Low Fat Froyo.jpg",
-        "Vanilla No Sugar Added Froyo.jpg",
-        "Very Stawberry Nonfat Froyo.jpg"
+    // List of flavor images
+    const flavors = [
+        "Cake Batter Lowfat Froyo",
+        "Cheesecake No Sugar Added Froyo",
+        "Choclate Classic Nonfat Froyo",
+        "Cookies N' Cream Nonfat Froyo",
+        "Cotton Candy Nonfat Froyo",
+        "Georgia Peach Nonfat Froyo",
+        "Hawaiian Pineapple Nonfat Froyo",
+        "Island Banana NonFat Froyo",
+        "Mango Sunrise Non Dairy Sorbert",
+        "Pomegranate Raspberry Non Dairy Sorbet",
+        "Salted Caramel Corn LowFat Froyo",
+        "Strawberry Banana No sugar Added",
+        "Strawberry Lemonade Non Dairy Sorbet",
+        "Sweet Coconut Low Fat Froyo",
+        "Vanilla No Sugar Added Froyo",
+        "Very Stawberry Nonfat Froyo"
     ];
 
-    images.forEach(img => {
-        let imageElement = document.createElement("img");
-        imageElement.src = `images/${img}`;
-        imageElement.alt = img.replace(/\.[^/.]+$/, "").replace(/-/g, " "); // Removes file extension and hyphens
-        imageElement.classList.add("flavor-image"); // Add styling class
-        imageContainer.appendChild(imageElement);
+    flavors.forEach(flavor => {
+        let listItem = document.createElement("li");
+        let link = document.createElement("a");
+        
+        link.href = `images/${flavor}.jpg`; // Links directly to images
+        link.target = "_blank"; // Opens in a new tab
+        link.textContent = flavor;
+
+        listItem.appendChild(link);
+        flavorList.appendChild(listItem);
     });
 });
