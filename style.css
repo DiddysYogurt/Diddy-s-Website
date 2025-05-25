@@ -1,6 +1,6 @@
 /* General Page Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern and stylish font */
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -10,14 +10,31 @@ body {
 /* Header Styling */
 header {
     background-color: #ff69b4;
-    padding: 30px;
+    padding: 40px;
     color: white;
-    font-size: 28px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Fun handwritten font */
 }
 
-/* Section Styling */
-section {
-    padding: 30px;
+/* Our Story Section */
+#our-story {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin: 30px auto;
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+#our-story h2 {
+    color: #ff69b4;
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
 }
 
 /* Styled List */
@@ -31,12 +48,13 @@ section {
 }
 
 .styled-list li {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 22px;
+    padding: 15px;
     background: white;
-    width: 250px;
+    width: 300px;
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
     transition: 0.3s;
 }
 
@@ -49,21 +67,24 @@ section {
 /* Footer Styling */
 #links {
     background-color: #ff69b4;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #links h2 {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
 }
 
 #links a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
+    font-size: 22px;
     transition: 0.3s;
 }
 
