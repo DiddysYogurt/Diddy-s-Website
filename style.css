@@ -1,0 +1,10 @@
+.flavor-image {
+    width: 200px; /* Adjust image size */
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.flavor-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
