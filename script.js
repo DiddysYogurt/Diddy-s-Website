@@ -1,35 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const flavorList = document.getElementById("flavor-list");
 
-    // List of flavor images
+    // List of flavors with links to dedicated pages
     const flavors = [
-        "Cake Batter Lowfat Froyo",
-        "Cheesecake No Sugar Added Froyo",
-        "Choclate Classic Nonfat Froyo",
-        "Cookies N' Cream Nonfat Froyo",
-        "Cotton Candy Nonfat Froyo",
-        "Georgia Peach Nonfat Froyo",
-        "Hawaiian Pineapple Nonfat Froyo",
-        "Island Banana NonFat Froyo",
-        "Mango Sunrise Non Dairy Sorbert",
-        "Pomegranate Raspberry Non Dairy Sorbet",
-        "Salted Caramel Corn LowFat Froyo",
-        "Strawberry Banana No sugar Added",
-        "Strawberry Lemonade Non Dairy Sorbet",
-        "Sweet Coconut Low Fat Froyo",
-        "Vanilla No Sugar Added Froyo",
-        "Very Stawberry Nonfat Froyo"
+        { name: "Cake Batter Lowfat Froyo", file: "flavors/cake-batter.html" },
+        { name: "Cheesecake No Sugar Added Froyo", file: "flavors/cheesecake.html" },
+        { name: "Choclate Classic Nonfat Froyo", file: "flavors/chocolate.html" },
+        { name: "Cookies N' Cream Nonfat Froyo", file: "flavors/cookies.html" },
+        { name: "Cotton Candy Nonfat Froyo", file: "flavors/cotton-candy.html" },
+        { name: "Georgia Peach Nonfat Froyo", file: "flavors/georgia-peach.html" },
+        { name: "Hawaiian Pineapple Nonfat Froyo", file: "flavors/hawaiian-pineapple.html" },
+        { name: "Island Banana NonFat Froyo", file: "flavors/island-banana.html" },
+        { name: "Mango Sunrise Non Dairy Sorbert", file: "flavors/mango-sunrise.html" }
     ];
 
     flavors.forEach(flavor => {
         let listItem = document.createElement("li");
         let link = document.createElement("a");
-        
-        link.href = `images/${flavor}.jpg`; // Links directly to images
-        link.target = "_blank"; // Opens in a new tab
-        link.textContent = flavor;
+
+        link.href = flavor.file; // Links to the flavor’s dedicated page
+        link.textContent = flavor.name;
 
         listItem.appendChild(link);
         flavorList.appendChild(listItem);
     });
 });
+
+
