@@ -7,39 +7,61 @@ body {
     text-align: center;
 }
 
-/* Links Section */
-#links {
-    display: block;
-    padding: 20px;
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff69b4;
+    padding: 10px 20px;
 }
 
-#links a {
-    display: inline-block;
-    color: #ff69b4; /* A nice pink to match your theme */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
     font-size: 18px;
-    text-decoration: underline;
-    margin: 10px;
+}
+
+/* Header Section */
+header {
+    padding: 30px;
+    background-color: #ffe4e1;
+}
+
+#logo {
+    width: 150px;
 }
 
 /* Flavors Section */
-#flavor-list {
-    list-style: none;
+#flavor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
 }
 
-#flavor-list li {
-    display: block;
-    padding: 10px;
-    font-size: 18px;
+.flavor-item {
     background: white;
-    margin: 10px auto;
-    width: 50%;
-    border-radius: 5px;
-    transition: 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    width: 220px;
 }
 
-#flavor-list li:hover {
-    background: #ff69b4;
-    color: white;
+.flavor-item img {
+    width: 100%;
+    border-radius: 10px;
 }
 
+.flavor-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
