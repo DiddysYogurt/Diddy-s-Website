@@ -1,6 +1,9 @@
+/* Import Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&family=Roboto+Slab:wght@500&display=swap');
+
 /* General Page Styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -12,9 +15,9 @@ header {
     background-color: #ff69b4;
     padding: 50px;
     color: white;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: bold;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 /* Our Story Section */
@@ -27,7 +30,8 @@ header {
     margin: 40px auto;
     text-align: center;
     font-size: 26px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 1px;
     line-height: 1.9;
 }
 
@@ -42,13 +46,13 @@ header {
 }
 
 .styled-list li {
-    font-size: 24px;
+    font-size: 26px;
     padding: 15px;
     background: white;
     width: 320px;
     border-radius: 10px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
     transition: 0.3s;
 }
 
@@ -64,6 +68,3 @@ header {
     padding: 30px;
     font-size: 24px;
 }
-
-
-
