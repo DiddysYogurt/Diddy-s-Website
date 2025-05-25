@@ -1,38 +1,54 @@
-/* Import Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&family=Roboto+Slab:wght@500&display=swap');
-
-/* General Page Styling */
+/* Background Image */
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-image: url('https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/Header%20page.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
 }
 
 /* Header Styling */
 header {
-    background-color: #ff69b4;
+    background-color: rgba(255, 105, 180, 0.9); /* Semi-transparent pink */
     padding: 50px;
     color: white;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Lobster', cursive;
+    border: 10px solid white;
+    border-radius: 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Our Story Section */
-#our-story {
-    background-color: white;
+/* Section Styling */
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparent white */
     padding: 50px;
-    border-radius: 12px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
-    width: 65%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
     margin: 40px auto;
     text-align: center;
     font-size: 26px;
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 1px;
     line-height: 1.9;
+}
+
+/* Unique Outlines for Sections */
+#our-story {
+    border: 10px groove #ff69b4; /* Cool groove effect */
+}
+
+#flavors {
+    border: 10px double #ff4500; /* Bold double border */
+}
+
+#toppings {
+    border: 10px dashed #008080; /* Fun dashed border */
 }
 
 /* Styled List */
@@ -46,14 +62,15 @@ header {
 }
 
 .styled-list li {
-    font-size: 26px;
+    font-size: 24px;
     padding: 15px;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     width: 320px;
     border-radius: 10px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-family: 'Roboto Slab', serif;
     transition: 0.3s;
+    border: 5px solid #ff69b4; /* Bold solid border */
 }
 
 .styled-list li:hover {
@@ -64,7 +81,9 @@ header {
 
 /* Footer Styling */
 #links {
-    background-color: #ff69b4;
+    background-color: rgba(255, 105, 180, 0.9);
     padding: 30px;
     font-size: 24px;
+    border-top: 10px solid white;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
 }
