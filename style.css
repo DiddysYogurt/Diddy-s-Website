@@ -166,24 +166,3 @@ iframe {
     color: #ffd700;
 }
 
-/* Mobile Optimization */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 7vw;
-    }
-
-    section {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .styled-list li {
-        width: 80%;
-        font-size: 20px;
-        padding: 12px;
-    }
-
-    iframe {
-        height: 300px;
-    }
-}
