@@ -34,6 +34,36 @@ header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Nutrition Section */
+#nutrition {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ff4500; /* Bold orange outline */
+}
+
+/* Nutrition Link Styling */
+.nutrition-link {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nutrition-link:hover {
+    background-color: #ff69b4; /* Changes to pink on hover */
+}
+
+
 /* Section Styling */
 section {
     background-color: rgba(255, 255, 255, 0.9);
