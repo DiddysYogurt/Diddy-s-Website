@@ -127,26 +127,27 @@ section {
 /* === Froyo Flavors Gallery === */
 .flavor-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr)); /* Much smaller */
+    gap: 5px; /* Less space between images */
     justify-content: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 /* Image Styling */
 .flavor-gallery img {
     width: 100%;
-    max-width: 180px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    max-width: 25px; /* Tiny images */
+    border-radius: 3px; /* Smaller border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    transition: transform 0.2s ease-in-out;
 }
 
 /* Hover Effect */
 .flavor-gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slight hover zoom */
     cursor: pointer;
 }
+
 
 /* === Styled List === */
 .styled-list {
