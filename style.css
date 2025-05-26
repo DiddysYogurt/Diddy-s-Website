@@ -30,9 +30,9 @@ nav {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Hide the menu by default */
 .nav-menu {
-    list-style: none;
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     top: 50px;
     right: 30px;
@@ -41,6 +41,12 @@ nav {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Show the menu when the "active" class is added */
+.nav-menu.active {
+    display: block;
+}
+
 
 .nav-menu li {
     margin: 10px 0;
