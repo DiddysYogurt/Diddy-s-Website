@@ -114,7 +114,8 @@ header {
 
 /* === Logo Styling === */
 .logo {
-    width: 700px;
+    width: 350px; /* Adjusted for better scaling */
+    height: auto;
     margin-top: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -123,16 +124,16 @@ header {
 /* === Section Styling === */
 section {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 50px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    width: 70%;
+    width: 75%;
     margin: 40px auto;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 1px;
-    line-height: 1.9;
+    line-height: 1.8;
 }
 
 /* Unique Borders for Sections */
@@ -167,7 +168,7 @@ section {
 
 /* Image Styling */
 .flavor-gallery img {
-    width: 175px; /* Increased size */
+    width: 160px; /* Adjusted for better scaling */
     height: auto;
     border-radius: 12px;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
@@ -200,10 +201,10 @@ section {
 }
 
 .styled-list li {
-    font-size: 24px;
-    padding: 15px;
+    font-size: 22px;
+    padding: 12px;
     background: rgba(255, 255, 255, 0.9);
-    width: 320px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-family: 'Roboto Slab', serif;
@@ -217,64 +218,48 @@ section {
     cursor: pointer;
 }
 
-/* === Video Section === */
-iframe {
-    display: block;
-    width: 90%;
-    max-width: 800px;
-    height: 450px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* === Footer Styling === */
-#links {
-    background-color: rgba(255, 105, 180, 0.9);
-    padding: 30px;
-    font-size: 24px;
-    border-top: 10px solid white;
-    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer Links */
-#links a {
-    color: white;
+/* === Nutrition Button Styling === */
+.nutrition-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
     font-weight: bold;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 8px;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 20px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
-#links a:hover {
+.nutrition-button:hover {
+    background-color: #cc0000;
     text-decoration: underline;
-    color: #ffd700;
 }
 
 /* === Mobile Optimization === */
 @media (max-width: 768px) {
     h1 {
-        font-size: 6vw; /* Slightly reduced for better mobile scaling */
+        font-size: 6vw;
     }
 
     section {
-        width: 90%; /* Keeps layout centered but prevents edge overflow */
-        padding: 15px; /* Reduced padding for tighter spacing */
+        width: 90%;
+        padding: 15px;
     }
 
     .styled-list li {
-        width: 75%; /* Smaller list items for better readability */
-        font-size: 18px; /* Reducing font size for compact screens */
-        padding: 10px; /* Less padding for a clean look */
+        width: 75%;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .logo {
-        max-width: 220px; /* Smaller logo for mobile */
+        max-width: 220px;
     }
 
     iframe {
-        height: 280px; /* Slightly reduced video height */
+        height: 280px;
     }
 }
 
