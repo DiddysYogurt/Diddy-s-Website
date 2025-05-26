@@ -255,24 +255,29 @@ iframe {
 /* === Mobile Optimization === */
 @media (max-width: 768px) {
     h1 {
-        font-size: 7vw;
+        font-size: 6vw; /* Slightly reduced for better mobile scaling */
     }
 
     section {
-        width: 95%;
-        padding: 20px;
+        width: 90%; /* Keeps layout centered but prevents edge overflow */
+        padding: 15px; /* Reduced padding for tighter spacing */
     }
 
     .styled-list li {
-        width: 80%;
-        font-size: 20px;
-        padding: 12px;
+        width: 75%; /* Smaller list items for better readability */
+        font-size: 18px; /* Reducing font size for compact screens */
+        padding: 10px; /* Less padding for a clean look */
+    }
+
+    .logo {
+        max-width: 220px; /* Smaller logo for mobile */
     }
 
     iframe {
-        height: 300px;
+        height: 280px; /* Slightly reduced video height */
     }
 }
+
 
 
 
