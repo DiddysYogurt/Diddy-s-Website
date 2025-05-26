@@ -1,3 +1,10 @@
+function toggleMenu() {
+    const menu = document.querySelector(".nav-menu");
+    menu.classList.toggle("active");
+}
+
+
+
 // List of background images
 const backgrounds = [
     "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/background1.jpg",
@@ -12,6 +19,5 @@ function changeBackground() {
     body.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
 }
 
-// Change background every 5 seconds
-setInterval(changeBackground, 5000);
+
 
