@@ -1,5 +1,5 @@
 const backgrounds = [
-    "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/background1.jpg",
+    "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/header page.jpg",
     "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/background2.jpg",
     "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/background3.jpg"
 ];
