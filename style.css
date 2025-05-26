@@ -1,3 +1,6 @@
+/* Import Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&family=Roboto+Slab:wght@500&display=swap');
+
 /* Background Image */
 body {
     font-family: 'Poppins', sans-serif;
@@ -33,7 +36,7 @@ header {
 
 /* Section Styling */
 section {
-    background-color: rgba(255, 255, 255, 0.9); /* Light transparent white */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border-radius: 20px;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
@@ -48,15 +51,15 @@ section {
 
 /* Unique Outlines for Sections */
 #our-story {
-    border: 10px groove #ff69b4; /* Cool groove effect */
+    border: 10px groove #ff69b4;
 }
 
 #flavors {
-    border: 10px double #ff4500; /* Bold double border */
+    border: 10px double #ff4500;
 }
 
 #toppings {
-    border: 10px dashed #008080; /* Fun dashed border */
+    border: 10px dashed #008080;
 }
 
 /* Styled List */
@@ -78,13 +81,36 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     font-family: 'Roboto Slab', serif;
     transition: 0.3s;
-    border: 5px solid #ff69b4; /* Bold solid border */
+    border: 5px solid #ff69b4;
 }
 
 .styled-list li:hover {
     background: #ff69b4;
     color: white;
     cursor: pointer;
+}
+
+/* Video Section */
+#video {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ff69b4;
+}
+
+/* Styling the iframe */
+iframe {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Styling */
