@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-// List of background images
-const backgrounds = [
-   // List of background images (Ensure all use raw GitHub links)
+// List of background images (Ensure all use raw GitHub links)
 const backgrounds = [
     "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/Cake%20Batter%20Lowfat%20Froyo.jpg",
     "https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/Cheesecake%20No%20Sugar%20Added%20Froyo.jpg",
@@ -51,16 +48,3 @@ function changeBackground() {
 
 // Automatically change background every 5 seconds
 setInterval(changeBackground, 5000);
-
-];
-
-// Function to change background
-function changeBackground() {
-    const body = document.body;
-    const randomIndex = Math.floor(Math.random() * backgrounds.length);
-    body.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
-}
-
-// Automatically change background every 5 seconds
-setInterval(changeBackground, 5000);
-
