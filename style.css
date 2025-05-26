@@ -20,6 +20,7 @@ nav {
     right: 30px;
 }
 
+/* Hamburger Menu Styling */
 .menu-toggle {
     font-size: 30px;
     cursor: pointer;
@@ -42,15 +43,16 @@ nav {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: auto;
     min-width: 200px;
-    display: flex;
-    gap: 20px; /* Adds space between links */
-    justify-content: center; /* Keeps links centered */
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Show menu when active */
 .nav-menu.active {
-    display: flex; /* Ensures menu stays horizontal */
+    display: flex;
 }
 
+/* Menu Items */
 .nav-menu a {
     display: block;
     padding: 12px;
@@ -61,6 +63,7 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
+/* Divider Between Regular Links & Social Media */
 .nav-menu hr {
     width: 80%;
     margin: 10px auto;
@@ -111,62 +114,57 @@ section {
 
 /* Unique Borders for Sections */
 #our-story {
-    border: 10px groove #ff69b4; /* Groove effect */
+    border: 10px groove #ff69b4;
 }
 
 #flavors {
-    border: 10px double #ff4500; /* Bold double border */
+    border: 10px double #ff4500;
 }
 
 #toppings {
-    border: 10px dashed #008080; /* Dashed border */
+    border: 10px dashed #008080;
 }
 
 #video {
-    border: 10px solid #ff69b4; /* Pink border */
+    border: 10px solid #ff69b4;
 }
 
 #nutrition {
-    border: 10px solid #ff4500; /* Bold orange border */
+    border: 10px solid #ff4500;
 }
 
-/* Froyo Flavors Gallery */
+/* === Froyo Flavors Gallery === */
 .flavor-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 evenly spaced columns */
-    gap: 20px; /* More space between images */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: center;
     padding: 30px;
 }
 
 /* Image Styling */
 .flavor-gallery img {
-    width: 150px; /* Increased size */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    width: 175px; /* Increased size */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
 }
 
 /* Cool Pattern: Staggered Layout */
 .flavor-gallery img:nth-child(odd) {
-    transform: rotate(-3deg); /* Slight tilt for odd images */
+    transform: rotate(-3deg);
 }
 
 .flavor-gallery img:nth-child(even) {
-    transform: rotate(3deg); /* Slight tilt for even images */
+    transform: rotate(3deg);
 }
 
 /* Hover Effect */
 .flavor-gallery img:hover {
-    transform: scale(1.15) rotate(0deg); /* Straightens on hover */
+    transform: scale(1.15) rotate(0deg);
     cursor: pointer;
 }
-
-
-
-
-
 
 /* === Styled List === */
 .styled-list {
@@ -252,4 +250,5 @@ iframe {
         height: 300px;
     }
 }
+
 
