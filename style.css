@@ -127,26 +127,35 @@ section {
 /* Froyo Flavors Gallery */
 .flavor-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Increased min size */
-    gap: 10px; /* More space between images */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusted column size */
+    gap: 15px; /* Space between images */
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
 }
 
 /* Image Styling */
 .flavor-gallery img {
-    width: 80px; /* Larger image size */
+    width: 100px; /* Consistent image size */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 5px; /* Slightly rounded corners */
+    border-radius: 5px; /* Slight rounding */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
     transition: transform 0.3s ease-in-out;
 }
 
 /* Hover Effect */
 .flavor-gallery img:hover {
-    transform: scale(1.1); /* Slight hover zoom */
+    transform: scale(1.1);
     cursor: pointer;
 }
+
+/* Ensure uniform fit inside #flavors */
+#flavors {
+    width: 70%; /* Consistent section width */
+    text-align: center;
+    padding: 30px;
+}
+
 
 
 
