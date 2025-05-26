@@ -40,16 +40,15 @@ nav {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: auto;
+    min-width: 200px;
+    display: flex;
+    gap: 20px; /* Adds space between links */
+    justify-content: center; /* Keeps links centered */
 }
 
-/* Show the menu when the "active" class is added */
 .nav-menu.active {
-    display: block;
-}
-
-
-.nav-menu li {
-    margin: 10px 0;
+    display: flex; /* Ensures menu stays horizontal */
 }
 
 .nav-menu a {
@@ -58,12 +57,16 @@ nav {
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s;
+    padding: 10px;
+    background-color: rgba(255, 105, 180, 0.8);
+    border-radius: 5px;
 }
 
 .nav-menu a:hover {
     text-decoration: underline;
     color: #ff69b4;
 }
+
 
 
 
