@@ -1,16 +1,16 @@
 /* Import Custom Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&family=Roboto+Slab:wght@500&display=swap');
 
-/* Background Image */
+/* General Page Styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://raw.githubusercontent.com/DiddysYogurt/Diddy-s-Website/main/images/Header%20page.jpg'); /* Replace with your actual image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
 /* Header Styling */
@@ -39,87 +39,5 @@ section {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    width: 70%;
-    margin: 40px auto;
-    text-align: center;
-    font-size: 26px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 1px;
-    line-height: 1.9;
-}
-
-/* Unique Outlines for Sections */
-#our-story {
-    border: 10px groove #ff69b4;
-}
-
-#flavors {
-    border: 10px double #ff4500;
-}
-
-#toppings {
-    border: 10px dashed #008080;
-}
-
-/* Styled List */
-.styled-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.styled-list li {
-    font-size: 24px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    font-family: 'Roboto Slab', serif;
-    transition: 0.3s;
-    border: 5px solid #ff69b4;
-}
-
-.styled-list li:hover {
-    background: #ff69b4;
-    color: white;
-    cursor: pointer;
-}
-
-/* Video Section */
-#video {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    width: 70%;
-    margin: 40px auto;
-    text-align: center;
-    border: 10px solid #ff69b4;
-}
-
-/* Styling the iframe */
-iframe {
-    display: block;
-    width: 90%;
-    max-width: 800px;
-    height: 450px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer Styling */
-#links {
-    background-color: rgba(255, 105, 180, 0.9);
-    padding: 30px;
-    font-size: 24px;
-    border-top: 10px solid white;
-    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
-}
 
 
