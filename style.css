@@ -237,31 +237,43 @@ section {
     text-decoration: underline;
 }
 
-/* === Mobile Optimization === */
 @media (max-width: 768px) {
+    .flavor-gallery img {
+        width: 50%; /* Shrinks images to half size */
+        max-width: 100px; /* Ensures they don't get too big */
+        display: block;
+        margin: 0 auto; /* Centers the images */
+    }
+
+    .logo {
+        max-width: 180px; /* Smaller logo for better scaling */
+        display: block;
+        margin: 0 auto; /* Centers the logo */
+    }
+
     h1 {
-        font-size: 6vw;
+        font-size: 5vw; /* Slightly smaller header for compact screens */
+        text-align: center; /* Ensures proper centering */
     }
 
     section {
         width: 90%;
         padding: 15px;
+        text-align: center;
     }
 
     .styled-list li {
-        width: 75%;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .logo {
-        max-width: 220px;
+        width: 70%;
+        font-size: 16px;
+        padding: 8px;
+        text-align: center;
     }
 
     iframe {
-        height: 280px;
+        height: 250px; /* Reduces video size for better fit */
     }
 }
+
 
 
 
