@@ -39,5 +39,151 @@ section {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border-radius: 20px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
 
+/* Unique Outlines for Sections */
+#our-story {
+    border: 10px groove #ff69b4;
+}
 
+#flavors {
+    border: 10px double #ff4500;
+}
+
+#toppings {
+    border: 10px dashed #008080;
+}
+
+/* Styled List */
+.styled-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.styled-list li {
+    font-size: 24px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto Slab', serif;
+    transition: 0.3s;
+    border: 5px solid #ff69b4;
+}
+
+.styled-list li:hover {
+    background: #ff69b4;
+    color: white;
+    cursor: pointer;
+}
+
+/* Video Section */
+#video {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ff69b4;
+}
+
+/* Styling the iframe */
+iframe {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Nutrition Section */
+#nutrition {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ff4500;
+}
+
+/* Nutrition Link Styling */
+.nutrition-link {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nutrition-link:hover {
+    background-color: #ff69b4;
+}
+
+/* Footer Styling */
+#links {
+    background-color: rgba(255, 105, 180, 0.9);
+    padding: 30px;
+    font-size: 24px;
+    border-top: 10px solid white;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Links */
+#links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#links a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .styled-list li {
+        width: 80%;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
