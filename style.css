@@ -127,36 +127,36 @@ section {
 /* Froyo Flavors Gallery */
 .flavor-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
-    grid-template-rows: auto;
-    gap: 15px; /* Space between images */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 evenly spaced columns */
+    gap: 20px; /* More space between images */
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Image Styling */
 .flavor-gallery img {
-    width: 120px; /* Increased size */
+    width: 150px; /* Increased size */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
     transition: transform 0.3s ease-in-out;
 }
 
 /* Cool Pattern: Staggered Layout */
 .flavor-gallery img:nth-child(odd) {
-    transform: rotate(-5deg); /* Slight tilt for odd images */
+    transform: rotate(-3deg); /* Slight tilt for odd images */
 }
 
 .flavor-gallery img:nth-child(even) {
-    transform: rotate(5deg); /* Slight tilt for even images */
+    transform: rotate(3deg); /* Slight tilt for even images */
 }
 
 /* Hover Effect */
 .flavor-gallery img:hover {
-    transform: scale(1.1) rotate(0deg); /* Straightens on hover */
+    transform: scale(1.15) rotate(0deg); /* Straightens on hover */
     cursor: pointer;
 }
+
 
 
 
