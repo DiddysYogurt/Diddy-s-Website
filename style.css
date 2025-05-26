@@ -52,19 +52,25 @@ nav {
 }
 
 .nav-menu a {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
     color: black;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-    padding: 10px;
-    background-color: rgba(255, 105, 180, 0.8);
-    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 
+.nav-menu hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ff69b4;
+}
+
+/* Hover Effect */
 .nav-menu a:hover {
-    text-decoration: underline;
     color: #ff69b4;
+    text-decoration: underline;
 }
 
 /* === Header Styling === */
