@@ -13,6 +13,29 @@ body {
     transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
+/* === High Contrast Mode Fix === */
+@media (forced-colors: active) {
+    body {
+        background-color: Canvas;
+        color: CanvasText;
+    }
+
+    .nav-menu {
+        background-color: ButtonFace;
+        color: ButtonText;
+    }
+
+    .menu-toggle {
+        background-color: Highlight;
+        color: HighlightText;
+    }
+}
+
+/* Opt-out of forced colors adjustments */
+.opt-out-of-high-contrast {
+    forced-color-adjust: none;
+}
+
 /* === Navigation Menu === */
 nav {
     position: absolute;
@@ -250,5 +273,6 @@ iframe {
         height: 300px;
     }
 }
+
 
 
