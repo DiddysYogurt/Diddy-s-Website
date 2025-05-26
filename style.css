@@ -1,7 +1,7 @@
-/* Import Custom Fonts */
+/* === Import Custom Fonts === */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display+SC&family=Roboto+Slab:wght@500&display=swap');
 
-/* General Page Styling */
+/* === General Page Styling === */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
-/* Navigation Menu */
+/* === Navigation Menu === */
 nav {
     position: absolute;
     top: 20px;
@@ -67,10 +67,7 @@ nav {
     color: #ff69b4;
 }
 
-
-
-
-/* Header Styling */
+/* === Header Styling === */
 header {
     background-color: rgba(255, 105, 180, 0.9);
     padding: 50px;
@@ -83,7 +80,7 @@ header {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Logo Styling */
+/* === Logo Styling === */
 .logo {
     width: 250px;
     margin-top: 15px;
@@ -91,7 +88,7 @@ header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Styling */
+/* === Section Styling === */
 section {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 50px;
@@ -106,9 +103,9 @@ section {
     line-height: 1.9;
 }
 
-/* Unique Outlines for Sections */
+/* Unique Borders for Sections */
 #our-story {
-    border: 10px groove #ff69b4; /* Cool groove effect */
+    border: 10px groove #ff69b4; /* Groove effect */
 }
 
 #flavors {
@@ -116,18 +113,42 @@ section {
 }
 
 #toppings {
-    border: 10px dashed #008080; /* Fun dashed border */
+    border: 10px dashed #008080; /* Dashed border */
 }
 
 #video {
-    border: 10px solid #ff69b4; /* Solid pink border */
+    border: 10px solid #ff69b4; /* Pink border */
 }
 
 #nutrition {
-    border: 10px solid #ff4500; /* Bold orange outline */
+    border: 10px solid #ff4500; /* Bold orange border */
 }
 
-/* Styled List */
+/* === Froyo Flavors Gallery === */
+.flavor-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Image Styling */
+.flavor-gallery img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.flavor-gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* === Styled List === */
 .styled-list {
     list-style: none;
     padding: 0;
@@ -155,7 +176,7 @@ section {
     cursor: pointer;
 }
 
-/* Video Section */
+/* === Video Section === */
 iframe {
     display: block;
     width: 90%;
@@ -166,24 +187,7 @@ iframe {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Nutrition Link Styling */
-.nutrition-link {
-    display: inline-block;
-    background-color: #ff4500;
-    color: white;
-    padding: 12px 20px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.nutrition-link:hover {
-    background-color: #ff69b4;
-}
-
-/* Footer Styling */
+/* === Footer Styling === */
 #links {
     background-color: rgba(255, 105, 180, 0.9);
     padding: 30px;
@@ -207,7 +211,7 @@ iframe {
     color: #ffd700;
 }
 
-/* Mobile Optimization */
+/* === Mobile Optimization === */
 @media (max-width: 768px) {
     h1 {
         font-size: 7vw;
@@ -228,3 +232,4 @@ iframe {
         height: 300px;
     }
 }
+
