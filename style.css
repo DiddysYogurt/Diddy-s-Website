@@ -51,15 +51,23 @@ section {
 
 /* Unique Outlines for Sections */
 #our-story {
-    border: 10px groove #ff69b4;
+    border: 10px groove #ff69b4; /* Cool groove effect */
 }
 
 #flavors {
-    border: 10px double #ff4500;
+    border: 10px double #ff4500; /* Bold double border */
 }
 
 #toppings {
-    border: 10px dashed #008080;
+    border: 10px dashed #008080; /* Fun dashed border */
+}
+
+#video {
+    border: 10px solid #ff69b4; /* Solid pink border */
+}
+
+#nutrition {
+    border: 10px solid #ff4500; /* Bold orange outline */
 }
 
 /* Styled List */
@@ -91,18 +99,6 @@ section {
 }
 
 /* Video Section */
-#video {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    width: 70%;
-    margin: 40px auto;
-    text-align: center;
-    border: 10px solid #ff69b4;
-}
-
-/* Styling the iframe */
 iframe {
     display: block;
     width: 90%;
@@ -111,18 +107,6 @@ iframe {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Nutrition Section */
-#nutrition {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
-    width: 70%;
-    margin: 40px auto;
-    text-align: center;
-    border: 10px solid #ff4500;
 }
 
 /* Nutrition Link Styling */
@@ -166,3 +150,24 @@ iframe {
     color: #ffd700;
 }
 
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .styled-list li {
+        width: 80%;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
